@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "heroku-run-build-script": true,
   "scripts": {
     "start": "node src/index.html",
-    "build": "webpack"
   },
   "repository": {
     "type": "git",
