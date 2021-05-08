@@ -22,8 +22,9 @@
 
   
      <div class="form-group row">
-      <div class="col-12">
+        <div style="max-width:250px">
           <select class="form-control" v-model="country">
+            <option value="" disabled>Select a country</option>
             <option :value="country.alpha2Code" v-for="country in countries">{{country.name}}</option>
           </select>
       </div>
@@ -31,10 +32,10 @@
   
     
      <div class="form-group row">
-      <div class="col-12">
+     
          <div :class="['search' , isNull ? 'search--error' : '']">
           <input class="form-control" type="text" v-model="name" placeholder="Name" style="width:100%"/>
-    </div>
+    
       </div>
     </div>
    
