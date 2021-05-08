@@ -4,9 +4,6 @@
   "description": "",
   "main": "server.js",
   "heroku-run-build-script": true,
-  "scripts": {
-    "start": "node src/index.html"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ungureanuramona1324/cloud.git"
