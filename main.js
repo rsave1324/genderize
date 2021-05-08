@@ -7,4 +7,4 @@ app.use('/', express.static('src'));
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
