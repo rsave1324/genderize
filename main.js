@@ -7,4 +7,10 @@ app.use('/', express.static('src'));
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.listen(process.env.PORT || 3000);
+// Heroku hack
+var port = process.env.PORT || 3000;
+// 
+// local port
+// var port = 3000
+
+app.listen(port);
