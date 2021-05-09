@@ -7,20 +7,7 @@ cd genderize
 3. install the npm dependencies
 npm install
 
-4. Set server port
-for heroku:
-uncomment line 11: 
-var port = process.env.PORT || 3000;
+4. In terminal, run the command:
+node server.js
 
-and comment line 14:
-var port = 3000
-
-
-for local:
-comment line 11: 
-var port = process.env.PORT || 3000;
-
-and uncomment line 14:
-var port = 3000
-
-5. for local go to your_ip::3000
+5. for local go to http://your_ip::3000
