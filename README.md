@@ -72,7 +72,9 @@ Convențiile de numire se pot baza foarte mult pe date demografice. Prin urmare,
 
 2. [REST Countries](https://restcountries.eu/)
 
-Am obținut informații despre țări printr-un API RESTful cu ajutorul endpoint-ului `https://restcountries.eu/rest/v2/all`.
+Am obținut informații despre țări printr-un API RESTful cu ajutorul endpoint-ului: 
+`https://restcountries.eu/rest/v2/all`
+
 Răspunsul primit în urma acestei solicitări este un fișier JSON care conține toate țările și alte detalii cum ar fi capitala, alpha2Code (country_id care va fi folosit pentru primul API), populația la un anumit moment, etc.
 ```
 [
