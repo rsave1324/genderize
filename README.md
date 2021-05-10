@@ -2,6 +2,9 @@
 
 Am creat această aplicație web care preia prenumele și țara de proveniență ale unei persoane și returnează genul acesteia (masculin sau feminim) cu o anumită probabilitate. 
 
+## Descriere problemă
+Într-o lume interconectată progresiv, dezbaterile privind identitatea de gen ca date personale sensibile sunt tot mai prezente. Cum anumite persoane ar prefera să nu ofere răspuns întrebărilor referitoare la gen, având în vedere potențialul lor discriminatoriu, am considerat utilă folosirea unui API care determină apartenența persoanei la una din cele două categorii pe baza prenumelui și a țării. 
+
 ## Utilizare
 Utilizările potențiale ale aplicației includ segmentarea unei liste de utilizatori pentru marketing sau analize.
 
@@ -32,7 +35,7 @@ Solicitarea va da următorul răspuns:
   "count": 165452
 }
 ```
-API-ul acceptă apeluri HTTP GET specificând un nume sau o listă de maxim 10 nume și returnează un răspuns în formatat JSON.
+API-ul acceptă apeluri HTTP GET, specificând un nume sau o listă de maxim 10 nume și returnează un răspuns în formatat JSON.
 `https://api.genderize.io/?name[]=peter&name[]=lois&name[]=stevie`
 ```
 [
@@ -75,7 +78,7 @@ Convențiile de numire se pot baza foarte mult pe date demografice. Prin urmare,
 Am obținut informații despre țări printr-un API RESTful cu ajutorul endpoint-ului: 
 `https://restcountries.eu/rest/v2/all`
 
-Răspunsul primit în urma acestei solicitări este un fișier JSON care conține toate țările și alte detalii cum ar fi capitala, alpha2Code (country_id care va fi folosit pentru primul API), populația la un anumit moment, etc.
+API-ul acceptă apeluri HTTP GET, iar răspunsul primit în urma acestei solicitări este un fișier JSON care conține toate țările și alte detalii cum ar fi capitala, alpha2Code (country_id care va fi folosit pentru primul API), populația la un anumit moment, etc.
 ```
 [
   {
@@ -113,6 +116,14 @@ Răspunsul primit în urma acestei solicitări este un fișier JSON care conțin
 Aplicația poate fi deschisă accesând următorul link:
 
 `https://findmygender.herokuapp.com/`
+
+1. Creare cont Heroku
+2. Click pe "Create new app"
+3. Dați un nume aplicației
+4. La secțiunea “Deployment method” selectați GitHub ca metodă
+5. Click Enable Automatic Deploys 
+6. Heroku va prelua codul și îl va găzdui
+7. Pentru verificarea log-urilor puteți accesa: `heroku logs --tail`
 
 ### AWS Cloud9
 1. Se clonează proiectul:
