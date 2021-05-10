@@ -121,10 +121,11 @@ Pentru publicarea aplicației se parcurg următorii pași:
 1. Creare cont Heroku
 2. Click pe "Create new app"
 3. Dați un nume aplicației
-4. La secțiunea “Deployment method” selectați GitHub ca metodă
-5. Click Enable Automatic Deploys 
-6. Heroku va prelua codul și îl va găzdui
-7. Pentru verificarea log-urilor puteți accesa: `heroku logs --tail`
+4. La secțiunea "Deployment method" selectați GitHub ca metodă
+5. Click "Enable Automatic Deploys" 
+6. Selectare "Deploy Branch"
+
+Heroku va prelua codul și îl va găzdui. Pentru verificarea log-urilor puteți accesa: `heroku logs --tail`
 
 ### AWS Cloud9
 1. Se clonează proiectul:
