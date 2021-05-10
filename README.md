@@ -5,6 +5,16 @@ Am creat această aplicație web care preia prenumele și țara de proveniență
 ## Utilizare
 Utilizările potențiale ale aplicației includ segmentarea unei liste de utilizatori pentru marketing sau analize.
 
+În Germania sau România o persoană pe nume Andrea este femeie în cele mai multe dintre cazuri.
+
+![Image of app](https://github.com/ungureanuramona1324/genderize/blob/master/img/andrea-germany.JPG)
+
+![Image of app](https://github.com/ungureanuramona1324/genderize/blob/master/img/andrea-romania.JPG)
+
+Nu același lucru se întâmplă și în Italia, unde Andrea este de regulă un nume de bărbat.
+
+![Image of app](https://github.com/ungureanuramona1324/genderize/blob/master/img/andrea-italy.JPG)
+
 ## Descriere API
 În dezvoltarea aplicației am folosit 2 API-uri:
 1. [Genderize.io](https://genderize.io/)
@@ -95,17 +105,30 @@ Răspunsul primit în urma acestei solicitări este un fișier JSON care conțin
 ]
 ```
 
-## Pasi
-1. Clone project from:
-https://github.com/ungureanuramona1324/genderize.git
+## Publicare aplicație 
 
-2. Go to project files
-cd genderize
+### Heroku
+Aplicația poate fi deschisă accesând următorul link:
 
-3. install the npm dependencies
-npm install
+`https://findmygender.herokuapp.com/`
 
-4. In terminal, run the command:
-node server.js
+### AWS Cloud9
+1. Se clonează proiectul:
 
-5. for local go to http://your_ip::3000
+`git clone https://github.com/ungureanuramona1324/genderize.git`
+
+2. În terminal se rulează comanda:
+
+`cd genderize`
+
+3. Se instalează dependențele npm:
+
+`npm install`
+
+4. În terminal se rulează comanda:
+
+`node server.js`
+
+5. Mergi către:
+
+`http://your_ip::3000`
