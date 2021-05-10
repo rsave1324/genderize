@@ -117,6 +117,7 @@ Aplicația poate fi deschisă accesând următorul link:
 
 `https://findmygender.herokuapp.com/`
 
+Pentru publicarea aplicației se parcurg următorii pași:
 1. Creare cont Heroku
 2. Click pe "Create new app"
 3. Dați un nume aplicației
