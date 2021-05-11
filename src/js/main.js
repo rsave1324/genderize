@@ -4,7 +4,7 @@ new Vue({
     return {
       countries: this.getCountries(),
       name: 'Mircea',
-      country: "Romania",
+      country: "",
       isNull: false,
       result: {
         name: 'Mircea',
