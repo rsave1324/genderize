@@ -11,9 +11,8 @@ new Vue({
         gender: 'male',
         probability: .96,
         country: 'Romania',
-        } };
-
-
+        } 
+    };
   },
   methods: {
      getCountries(){
@@ -23,8 +22,8 @@ new Vue({
         },
         response => {
           alert("API connection failed");
-        })},
-        
+        })
+     },
     search() {
       this.isNull = false;
       if (this.name != null && this.name.trim() != "") {
@@ -35,18 +34,11 @@ new Vue({
         response => {
           alert("API connection failed");
         });
-
       }
     },
-  
-  
-    
     showResults(result) {
       this.result.name = result.name;
       this.result.gender = result.gender;
       this.result.probability = result.probability;
     } },
-    
-
  });
-//# sourceURL=pen.js
