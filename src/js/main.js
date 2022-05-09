@@ -16,7 +16,7 @@ new Vue({
   },
   methods: {
      getCountries(){
-        this.$http.get(`https://restcountries.eu/rest/v2/all`).then(
+        this.$http.get(`https://restcountries.com/v3.1/all`).then(
         response => {
           this.countries = response.body;
         },
